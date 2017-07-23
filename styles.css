@@ -1,0 +1,22 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+}
+
+.img {
+	margin: 50px auto;
+	background-image: url(5.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	width: 900px;
+	height: 500px;
+	animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 30% 50%;}
+    	
+    100% {background-position: 0% 50%;}
+}
