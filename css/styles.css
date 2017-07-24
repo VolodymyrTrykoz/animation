@@ -1,0 +1,41 @@
+@import url(reset.css);
+html {
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+}
+body {
+	
+}
+.slider_wrapper {
+	height: 450px;
+	overflow: hidden;
+	
+}
+.slider_page {
+	position: relative;
+}
+.img {
+	background-image: url(../img/trava.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 125%;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	animation: move 25s linear infinite alternate;
+	
+}
+.inner_text {
+	width: 500px;/* жестко задана ширина */
+	position: absolute;
+	top: 0;
+	left: 50%;/* ставим центр */
+	margin-left: -250px; /* отрицательный отступ равный 1/2 ширины (width) позиционируемого блока */
+	text-align: center;
+	
+}
+
+@keyframes move {
+    from {transform: scale(1.2) translateX(0px);}
+    to {transform: scale(1.3) translateX(100px);}
+}
