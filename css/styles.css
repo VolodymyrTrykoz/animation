@@ -135,6 +135,20 @@ h1, h2, h3, h4, p {
 	cursor: pointer;
 }
 /*World*/
+#world div {
+	padding: 20px;
+}
+.left_quarter {
+	transform: translateX(-100px);
+
+}
+.right_quarter {
+	transform: translateX(100px);
+	
+}
+.center_quarter {
+	transform: translateY(100px);
+}	
 .world {
 	text-align: center;
 	background-color: #f1efef;
@@ -268,18 +282,20 @@ text-align: center;
 	height: 100%;
 	padding: 20px;
 }
-.zoom-hover figure{
+.zoom-hover{
 	height: 149px;
 	width: 200px;
 	overflow: hidden;
 		
 }
-
-
-.zoom-hover:hover img {
+.zoom-hover img {
+	height: 149px;
+	width: 200px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.zoom-hover img:hover {
 	transform: scale(1.15);
-	transition: 0.2s ease-in-out;
-
 }
 
 

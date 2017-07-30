@@ -26,3 +26,9 @@ jQuery(function($){
 	});
 	$('.eqheigth').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
 });
+//---------------------------------------------
+	$(window).scroll(function(){
+    var bo = $("body").scrollTop();
+    if ( bo > 200 ) $("#world > div").css({'-webkit-transform': 'translate(0)'}, {'-webkit-transition-duration':'1.2s'});
+     });
+
