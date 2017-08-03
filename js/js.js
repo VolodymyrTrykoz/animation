@@ -1,30 +1,34 @@
+//slider settings
 $('.slider').slick({
 	  infinite: true,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  dots: true,
 	  fade: true,//without this property slider can't open full screen animated img. Miracle
-	 // autoplay: true,
-	  autoplaySpeed: 10000,
+	  autoplay: true,
+	  autoplaySpeed: 5000,
 	  draggable: false,
 });//end slick
 //--------------------------------------------
+//menu buton
 $('.menuToggle').on('click', function(){
 		$('.menu').slideDown(500); // end slideToggle
 }); // end menuToggle
 //--------------------------------------------
+//close menu button
 $('.fa-times').on('click', function(){
 		$('.menu').slideUp(500); // end fa-times
 }); // end menuT
 //--------------------------------------------
+//this function choose the highest column and makes this height for all columns
 jQuery(function($){
-	var max_col_height = 0; // максимальная высота, первоначально 0
-	$('.eqheigth').each(function(){ // цикл "для каждой из колонок"
-		if ($(this).height() > max_col_height) { // если высота колонки больше значения максимальной высоты,
-			max_col_height = $(this).height(); // то она сама становится новой максимальной высотой
+	var max_col_height = 0; // max height. initially 0
+	$('.eqheigth').each(function(){ // cycle for each columl
+		if ($(this).height() > max_col_height) { // if height of selected in cycle column is higher than our variable 'max_col_height'
+			max_col_height = $(this).height(); // than it becomes the heighest one
 		}
 	});
-	$('.eqheigth').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
+	$('.eqheigth').height(max_col_height); // making max height for each column
 });
 //---------------------------------------------
     //3 divs small scroll animation
@@ -41,19 +45,20 @@ jQuery(function($){
 												'opacity':'1'});
 	});
 //---------------------------------------------	
+//this function choose the highest column and makes this height for all columns
 jQuery(function($){
-	var max_col_height = 0; // максимальная высота, первоначально 0
-	$('.equal_size_small').each(function(){ // цикл "для каждой из колонок"
-		if ($(this).height() > max_col_height) { // если высота колонки больше значения максимальной высоты,
-			max_col_height = $(this).height(); // то она сама становится новой максимальной высотой
+	var max_col_height = 0; // max height. initially 0
+	$('.equal_size_small').each(function(){ // cycle for each columl
+		if ($(this).height() > max_col_height) { // if height of selected in cycle column is higher than our variable 'max_col_height'
+			max_col_height = $(this).height(); // than it becomes the heighest one
 		}
 	});
-	$('.equal_size_small').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
+	$('.equal_size_small').height(max_col_height); // making max height for each column
 });
 //---------------------------------------------
 	$(window).scroll(function(){
 	var bo = $('body').scrollTop();
 	//$('#specialism_wrapper').text(bo);
-	if ( bo > 2300 ) $('#specialism_wrapper').css({'right':'0',
+	if ( bo > 2500 ) $('#specialism_wrapper').css({'right':'0',
 												'opacity':'1'});
 	});
