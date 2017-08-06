@@ -1,6 +1,6 @@
 @import url(reset.css);
 html, body {
-	min-width: 600px;
+	
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4 {
@@ -539,5 +539,9 @@ footer .social li a i:hover {
 	margin-left: 10%;	
 	margin-bottom: 24px;
 }
+  .inner_text {
+  	max-width: 300px;
+  	margin-left: -150px;
+  }
 }
 	

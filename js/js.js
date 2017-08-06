@@ -5,7 +5,7 @@ $('.slider').slick({
 	  slidesToScroll: 1,
 	  dots: true,
 	  fade: true,//without this property slider can't open full screen animated img. Miracle
-	  autoplay: true,
+	 // autoplay: true,
 	  autoplaySpeed: 5000,
 	  draggable: false,
 });//end slick
